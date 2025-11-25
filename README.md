@@ -16,8 +16,8 @@ This repository is the official implementation of our paper. We would like to ac
 
 | Model | cSDR | uSDR | Link |
 |-------|------|------|------|
-| bsroformer | 10.47 | 10.29 | [Link]() |
-| bsmamba2 | 11.03 | 10.70 | [Link]() |
+| bsroformer | 10.47 | 10.29 | [Link](https://drive.google.com/file/d/1xAjVjCIp71gqjjgCJYjU1yaMLp39pHEm/view?usp=sharing) |
+| bsmamba2 | 11.03 | 10.70 | [Link](https://drive.google.com/file/d/1W-IX8I5B2g-8JA5Zaf-HkUul0MpOEBaZ/view?usp=sharing) |
 
 ## Installation
 
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 
 5. Prepare the dataset by running SAD (Source Activity Detection) process on train/valid/test:
    ```bash
-   python prepare_dataset.py -i {dataset 경로} -o {생성된 filelist가 들어갈 경로} --subset {train/valid/test}
+   python prepare_dataset.py -i {dataset path} -o {output path} --subset {train/valid/test}
    ```
 
 6. Configure the dataset paths in `src/config`:
