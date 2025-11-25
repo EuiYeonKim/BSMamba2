@@ -64,6 +64,7 @@ pip install -r requirements.txt
 
 5. Prepare the dataset by running SAD (Source Activity Detection) process on train/valid/test:
    ```bash
+   cd src
    python prepare_dataset.py -i {dataset path} -o {output path} --subset {train/valid/test}
    ```
 
@@ -75,24 +76,33 @@ pip install -r requirements.txt
 
 ## Usage
 
+**Note:** All commands should be executed from the `src` directory. Please change to the `src` directory before running any commands:
+
+```bash
+cd src
+```
+
 ### 1. Training
 
 Configure the config files (if you want to reproduce the results, download the pretrained weights and match the config settings).
 
 ```bash
+cd src
 python train.py
 ```
 
 ### 2. Evaluation
 
 ```bash
-python src/evaluate.py --run-dir src/logs/{some_log}/vocals/{some_date} --duration {duration}
+cd src
+python evaluate.py --run-dir logs/{some_log}/vocals/{some_date} --duration {duration}
 ```
 
 ### 3. Inference
 
 ```bash
-python src/inference.py -i {input_audio_path} -c src/logs/{some_log}/vocals/{some_date}/weights/{some_weight}.ckpt
+cd src
+python inference.py -i {input_audio_path} -c logs/{some_log}/vocals/{some_date}/weights/{some_weight}.ckpt
 ```
 
 
