@@ -1,0 +1,34 @@
+Collecting causal-conv1d
+  Downloading causal_conv1d-1.4.0.tar.gz (9.3 kB)
+Requirement already satisfied: ninja in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from causal-conv1d) (1.11.1.1)
+Requirement already satisfied: packaging in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from causal-conv1d) (24.1)
+Requirement already satisfied: torch in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from causal-conv1d) (2.3.1)
+Requirement already satisfied: sympy in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (1.12.1)
+Requirement already satisfied: triton==2.3.1; platform_system == "Linux" and platform_machine == "x86_64" and python_version < "3.12" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (2.3.1)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (12.1.105)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (11.0.2.54)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (12.1.105)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (12.1.105)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (8.9.2.26)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (10.3.2.106)
+Requirement already satisfied: networkx in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (3.1)
+Requirement already satisfied: typing-extensions>=4.8.0 in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (4.12.2)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (11.4.5.107)
+Requirement already satisfied: fsspec in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (2024.6.0)
+Requirement already satisfied: jinja2 in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (3.1.4)
+Requirement already satisfied: nvidia-nccl-cu12==2.20.5; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (2.20.5)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (12.1.3.1)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106; platform_system == "Linux" and platform_machine == "x86_64" in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (12.1.0.106)
+Requirement already satisfied: filelock in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from torch->causal-conv1d) (3.15.4)
+Requirement already satisfied: mpmath<1.4.0,>=1.1.0 in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from sympy->torch->causal-conv1d) (1.3.0)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from nvidia-cusolver-cu12==11.4.5.107; platform_system == "Linux" and platform_machine == "x86_64"->torch->causal-conv1d) (12.5.40)
+Requirement already satisfied: MarkupSafe>=2.0 in /data/BSRNN/BandSplitRNN-PyTorch/.venv/lib/python3.8/site-packages (from jinja2->torch->causal-conv1d) (2.1.5)
+Building wheels for collected packages: causal-conv1d
+  Building wheel for causal-conv1d (setup.py): started
+  Building wheel for causal-conv1d (setup.py): finished with status 'done'
+  Created wheel for causal-conv1d: filename=causal_conv1d-1.4.0-cp38-cp38-linux_x86_64.whl size=104686205 sha256=0a55a4ac3392cd4dd6e770d0c7e5014aaf7c01d3079bd37054acf22a08c34e03
+  Stored in directory: /root/.cache/pip/wheels/94/7b/9d/dedb019c276a5e8b405d7831553f0fb33bece54a9065c181f8
+Successfully built causal-conv1d
+Installing collected packages: causal-conv1d
+Successfully installed causal-conv1d-1.4.0

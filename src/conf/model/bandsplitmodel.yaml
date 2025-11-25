@@ -1,0 +1,13 @@
+dim: 256
+depth: 6
+stereo: True
+mask_estimator_depth: 2
+module_type: "mamba2"
+# only transformer
+dim_head: 48
+heads: 8
+ff_dropout: 0.1
+attn_dropout: 0.1
+flash_attn: False
+# only mamba
+mamba_gmlp: False

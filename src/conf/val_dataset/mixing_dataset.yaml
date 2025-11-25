@@ -1,0 +1,8 @@
+_target_: data.MixingDataset
+file_dir: ${oc.env:MUSDB_DIR}
+txt_dir: ${..train_dataset.txt_dir}
+is_training: False
+instruments: ${..train_dataset.instruments}
+target: ${..train_dataset.target}
+num_steps: 1200
+batch_size: ${train_loader.batch_size}

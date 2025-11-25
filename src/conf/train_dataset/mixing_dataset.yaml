@@ -1,0 +1,18 @@
+_target_: data.MixingDataset
+file_dir: ${oc.env:MUSDB_DIR}
+txt_dir: "/data/BandSplitRNN-PyTorch/filelist/8seconds/mus18hq"
+is_training: True
+instruments:
+    - vocals
+    - other
+    - bass
+    - drums
+target:
+    - vocals
+num_steps: 6000
+batch_size: ${train_loader.batch_size}
+silent_prob: 0.1
+augmentation:
+    loudness:
+        loudness_min: 0.5
+        loudness_max: 1.5
