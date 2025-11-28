@@ -25,6 +25,15 @@ This repository is the official implementation of our paper. We would like to ac
 pip install -r requirements.txt
 ```
 
+### Other Requirements
+
+The following requirements are needed (from [state-spaces/mamba](https://github.com/state-spaces/mamba)):
+
+- Linux
+- NVIDIA GPU
+- PyTorch 1.12+
+- CUDA 11.6+
+
 ## Dataset Setup
 
 ### 0. Setting
